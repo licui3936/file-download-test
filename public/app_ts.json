@@ -1,0 +1,114 @@
+{
+    "devtools_port": 9090,
+    "runtime": {
+        "arguments": "--v=1 --inspect",
+        "version": "canary"
+    },
+    "startup_app": {
+        "name": "layouts2_prototype_generated",
+        "uuid": "layouts2_prototype_generated",
+        "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
+        "autoShow": false,
+        "fdc3Api": true,
+        "standardFrame": true,
+        "layout": {
+            "windows": [
+                {
+                    "name": "window_0.7490496261132638",
+                    "defaultWidth": 800,
+                    "defaultHeight": 600,
+                    "defaultLeft": 0,
+                    "defaultTop": 0,
+                    "saveWindowState": false,
+                    "backgroundThrottling": true,
+                    "layoutConfig": {
+                        "content": [
+                            {
+                                "type": "row",
+                                "id": "mainRow",
+                                "isClosable": true,
+                                "reorderEnabled": true,
+                                "title": "",
+                                "content": [
+                                    {
+                                        "type": "stack",
+                                        "width": 50,
+                                        "isClosable": true,
+                                        "reorderEnabled": true,
+                                        "title": "",
+                                        "activeItemIndex": 0,
+                                        "content": [
+                                            {
+                                                "type": "component",
+                                                "componentName": "view",
+                                                "componentState": {
+                                                    "url": "https://openfin.co",
+                                                    "name": "openfin"
+                                                },
+                                                "isClosable": true,
+                                                "reorderEnabled": true,
+                                                "title": "view"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "column",
+                                        "isClosable": true,
+                                        "reorderEnabled": true,
+                                        "title": "",
+                                        "width": 50,
+                                        "content": [
+                                            {
+                                                "type": "stack",
+                                                "height": 50,
+                                                "isClosable": true,
+                                                "reorderEnabled": true,
+                                                "title": "",
+                                                "activeItemIndex": 0,
+                                                "content": [
+                                                    {
+                                                        "type": "component",
+                                                        "componentName": "view",
+                                                        "componentState": {
+                                                            "url": "https://example.com",
+                                                            "name": "example"
+                                                        },
+                                                        "isClosable": true,
+                                                        "reorderEnabled": true,
+                                                        "title": "view"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "stack",
+                                                "height": 50,
+                                                "isClosable": true,
+                                                "reorderEnabled": true,
+                                                "title": "",
+                                                "activeItemIndex": 0,
+                                                "content": [
+                                                    {
+                                                        "type": "component",
+                                                        "componentName": "view",
+                                                        "componentState": {
+                                                            "url": "https://google.com",
+                                                            "name": "google"
+                                                        },
+                                                        "isClosable": true,
+                                                        "reorderEnabled": true,
+                                                        "title": "view"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "shortcut": {}
+}

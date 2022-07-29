@@ -1,0 +1,26 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "testpoc",
+        "description": "OpenFin POC",
+        "url": "http://google.com",
+        "uuid": "testPOC",
+        "autoShow": true,
+        "permissions": {
+            "System": {
+                "launchExternalProcess": true,
+				"getAllExternalWindows": true
+			}
+        }		
+    },
+    "runtime": {
+        "arguments": "--inspect=9222 --v=1 --delay-mesh --enable-mesh",
+		"version": "canary",
+		"version1": "beta"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "name": "Openfin POC"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "OpenfinPOC1",
+        "description": "OpenFin POC",
+        "url": "http://localhost:5555/index.html",
+        "uuid": "OpenfinPOC1",
+        "autoShow": true,
+        "experimental": {
+            "v2Api": true
+        },
+        "enableAppLogging": true,
+			"permissions": {
+			"Application": {
+				"setFileDownloadLocation": true
+			},
+			"ExternalWindow": {
+				"wrap": true
+			},
+			"System": {
+				"downloadAsset": true,
+				"launchExternalProcess": true,
+				"launchFile": true,
+				"openUrlWithBrowser": {
+					"enabled":true,
+					"protocols":["msteams", "slack"]
+				},
+                "readRegistryValue": {
+                  "enabled":true,
+                  "registryKeys":[  
+                     "HKEY_CURRENT_USER\\Software\\OpenFin\\RVM",
+                     "HKEY_CURRENT_USER\\Software\\OpenFin\\Runtime",
+                     "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System"
+                  ]
+                }
+			},
+			"webAPIs": ["audio", "video", "notifications"]
+		},
+		"defaultDomainSettings": {
+			"rules": [
+				{
+					"match": [
+						"*://file-examples-com.github.io/*",
+						"*://sample-videos.com/*"
+					],
+					"options": {
+						"downloadSettings": {
+							"rules": [
+								{
+									"match": [
+										"*://*/*.xls", "*://*/*.csv"
+									],
+									"behavior": "no-prompt"
+								},
+								{
+									"match": [
+										"<all_urls>"
+									],
+									"behavior": "prompt"								
+								}
+							]
+						}
+					}
+				},
+				{
+					"match": [
+						"*://www.lancsngfl.ac.uk/*"
+					],
+					"options": {
+						"downloadSettings": {
+							"rules": [
+								{
+									"match": [
+										"*://*/*.exe"
+									],
+									"behavior": "no-prompt"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+    },
+    "runtime": {
+        "arguments": "--inspect=9222 --v=1",
+        "version": "canary"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "name": "Openfin POC"
+    }
+}

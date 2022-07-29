@@ -1,0 +1,32 @@
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<div>
+    <h3>Inspect a Shared Worker</h3>
+
+    Upon clicking this button, you should be able to inspect worker.js
+    <button onclick="inspectShared()">
+        Inspect Shared Worker
+    </button>
+</div>
+
+
+<script>
+    async function inspectShared() {
+        const uuid = fin.me.identity.uuid;
+        const view = fin.View.wrapSync({ name: 'sharedWorker', uuid });
+        const workers = await view.getSharedWorkers();
+        view.inspectSharedWorker(workers[0].id);
+    }
+
+    async function inspectService() {
+        const uuid = fin.me.identity.uuid;
+        const view = fin.View.wrapSync({ name: 'serviceWorker', uuid });
+        view.inspectServiceWorker();
+    }
+</script>

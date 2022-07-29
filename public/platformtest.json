@@ -1,0 +1,50 @@
+{ 
+	"runtime": {
+            "version": "19.89.58.15"
+    },
+    "platform": {
+		"uuid": "test-platform",
+		"autoShow": true,
+		"processAffinity": "test",
+		"experimental": {
+			"childWindows": true
+		},
+		"defaultWindowOptions": {
+			"processAffinity": "foo",
+			"defaultWidth": 300,
+			"defaultHeight": 300,
+			"defaultLeft": 0,
+			"defaultTop": 0,
+			"saveWindowState": false,
+			"showBackgroundImages": true,
+			"backgroundThrottling": true
+		}
+	},
+	"snapshot": {
+		"windows": [
+			{
+				"name": "window_A",
+				"layout": {
+					"content": [
+						{
+							"type": "stack",
+							"id": "no-drop-target",
+							"content": [
+								{
+									"type": "component",
+									"componentName": "view",
+									"componentState": {
+										"name": "component_A1",
+										"processAffinity": "bar",
+										"showDevTools": true,
+										"url": "http://example.com"
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

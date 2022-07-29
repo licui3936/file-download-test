@@ -1,0 +1,19 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "OpenfinPOC",
+        "description": "OpenFin POC",
+        "url": "http://cnn.com",
+        "uuid": "OpenfinPOC-rdefvvmiim",
+        "autoShow": true
+    },
+    "runtime": {
+        "arguments": "--v=1 --diagnostics --no-sandbox --enable-crash-reporting",
+        "version": "canary"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "name": "Openfin POC"
+    }
+}

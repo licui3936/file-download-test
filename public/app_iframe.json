@@ -1,0 +1,23 @@
+{
+	"runtime": {
+		"arguments": "--inspect=9222 --security-realm=\"iframesTester\"",
+		"version0": "15.80.48.13",
+		"version": "18.87.57.40"
+	},
+	"startup_app": {
+		"autoShow": true,
+		"enableAppLogging": true,
+		"frame": true,
+		"minWidth": 400,
+		"minHeight": 300,
+		"name": "iFrames Tester",
+		"accelerator": {
+			"devtools": true,
+			"reload": true,
+			"reloadIgnoringCache": false,
+			"zoom": true
+		},
+		"url": "http://localhost:5555/one.html",
+		"uuid": "iFrames Tester"
+	}
+}

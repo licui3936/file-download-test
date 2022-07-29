@@ -1,0 +1,25 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "testpoc2",
+        "description": "OpenFin POC",
+        "url": "http://localhost:5555/testIframe2.html",
+        "uuid": "testPOC2",
+        "autoShow": true,
+        "permissions": {
+            "System": {
+                "launchExternalProcess": true,
+				"getAllExternalWindows": true
+			}
+        }		
+    },
+    "runtime": {
+        "arguments": "--inspect=9222 --v=1 --delay-mesh --security-realm=test2 --enable-mesh",
+		"version": "stable"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "name": "Openfin POC"
+    }
+}

@@ -1,0 +1,22 @@
+{  
+    "applicationSettings": {
+      "MyPolicies": {
+        "urls": ["http://localhost:5555/app.json"],
+        "permissions": {
+          "System": {
+            "downloadAsset": false,
+            "launchExternalProcess": false,
+            "readRegistryValue": false,
+            "terminateExternalProcess": false
+          }
+        }
+      },
+      "default": {
+        "permissions": {
+          "System": {
+            "launchExternalProcess": false
+          }
+        }
+      }
+    }
+  }

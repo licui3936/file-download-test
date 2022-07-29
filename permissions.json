@@ -1,0 +1,68 @@
+{  
+    "applicationSettings": {
+		"http://localhost:5555/app.json": {
+		  "permissions": {
+			"System": {
+				"launchExternalProcess": false
+			  }		
+			}
+		},
+      "MyPolicies": {
+        "urls": ["http://localhost:8080/app.json"],
+        "permissions": {
+          "Application": {
+            "setShortcuts": false
+          },
+          "System": {
+            "clearCache": false,
+            "deleteCacheOnExit": false,
+            "downloadAsset": false,
+            "downloadPreloadScripts": false,
+            "downloadRuntime": false,
+            "exit": false,
+            "getCommandLineArguments": false,
+            "getConfig": false,
+            "getCookies": false,
+            "getDeviceId": false,
+            "getDeviceUserId": false,
+            "getEnvironmentVariable": false,
+            "getHostSpecs": false,
+            "getLog": false,
+            "getLogList": false,
+            "getMonitorInfo": false,
+            "getMousePosition": false,
+            "getProcessList": false,
+            "getRemoteConfig": false,
+            "launchExternalProcess": true,
+            "monitorExternalProcess": false,
+            "readRegistryValue": false,
+            "releaseExternalProcess": false,
+            "terminateExternalProcess": false,
+            "setClipboard": false,
+            "Clipboard": {
+                "clipboardAvailableFormats": false,
+                "clipboardReadHtml": false,
+                "clipboardReadRtf": false,
+                "clipboardReadText": false,
+                "clipboardWrite": false,
+                "clipboardWriteHtml": false,
+                "clipboardWriteRtf": false,
+                "clipboardWriteText": false
+            }
+          },
+          "Window": {
+            "executeJavaScript": false,
+            "getNativeId": false,
+            "getSnapshot": false
+          }
+        }
+      },
+      "default": {
+        "permissions": {
+          "System": {
+            "launchExternalProcess": true
+          }
+        }
+      }
+    }
+  }

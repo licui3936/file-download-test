@@ -1,0 +1,78 @@
+{
+    "devtools_port": 9090,
+    "licenseKey": "64605fac-add3-48a0-8710-64b38e96a2d",
+    "startup_app": {
+        "name": "OpenfinPOCName",
+        "url": "http://localhost:5555/index.html",
+        "uuid": "OpenfinPOC",
+        "icon": "http://localhost:5555/favicon.ico",
+        "contentNavigation": {
+            "whitelist": [
+                "https://*.cnn.com/*",
+				"http://localhost:5555/*",
+				"http://example.com/*"
+            ]
+        },		
+        "autoShow": true,
+        "saveWindowState": true,
+        "backgroundColor": "#aabbcc",
+        "waitForPageLoad": false,
+        "alphaMask": {
+            "red": 200,
+            "green": 200,
+            "blue": 200
+        },
+        "accelerator": {
+            "zoom": true
+        },
+        "api": {
+            "iframe": {
+                "crossOriginInjection": true
+            }
+        }, 		
+        "resizeRegion": {},
+        "cornerRounding": {
+            "width": 20,
+            "height": 20
+        },
+        "defaultWidth": 1000,
+        "defaultHeight": 500,
+        "frame": true,
+        "nonPersistent": false,
+        "resizable": true,
+		"plugins": true,
+		"enableAppLogging": true,
+        "preloadScripts": [
+            {
+                "url": "http://localhost:5555/js/test.js"
+            }
+        ],
+        "permissions": {
+            "System": {
+                "launchExternalProcess": true,
+				"getAllExternalWindows": true
+			}
+        }
+    },
+    "runtime": {
+        "arguments": "--inspect=9222 --v=1",
+        "version4": "13.76.43.30",
+        "version5": "9.61.31.76",
+        "version3": "13.76.44.13",
+        "version6": "13.76.44.15",
+        "version2": "10.66.41.18",
+        "version": "canary"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "icon": "http://localhost:5555/favicon.ico",
+        "name": "Openfin POC"
+    },
+    "supportInformation": {
+        "company": "Company Name",
+        "product": "Product Name",
+        "email": "support@company.com",
+        "forwardErrorReports": true
+    }
+}

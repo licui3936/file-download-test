@@ -1,0 +1,15 @@
+{
+  "name": "openfin-template",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@types/openfin": "^43.0.1",
+    "hadouken-js-adapter": "latest",
+    "live-server": "^1.2.0",
+    "openfin-launcher": "^1.4.4"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "modify-filename": "^1.1.0"
+  }
+}

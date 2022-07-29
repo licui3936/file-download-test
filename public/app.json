@@ -1,0 +1,155 @@
+{
+    "licenseKey": "64605fac-add3-48a0-8710-64b38e96a2d",
+    "startup_app": {
+        "name": "OpenfinPOCName",
+        "url": "http://localhost:5555/index.html",
+        "uuid": "OpenfinPOC",
+        "icon": "http://localhost:5555/favicon.ico",
+        "autoShow": true,
+        "saveWindowState": true,
+        "backgroundColor": "#aabbcc",
+        "showTaskbarIcon": true,
+        "alphaMask": {
+            "red": 200,
+            "green": 200,
+            "blue": 200
+        },
+        "accelerator": {
+            "zoom": true
+        },
+        "resizeRegion": {},
+        "cornerRounding": {
+            "width": 20,
+            "height": 20
+        },
+        "defaultWidth": 1000,
+        "defaultHeight": 500,
+        "frame": true,
+        "resizable": true,
+        "plugins": true,
+		"preloadScripts": [{"url":"http://localhost:5555/js/test.js"}],
+        "enableAppLogging": true,
+		"experimental": {
+			"childWindows": true,
+			"analytics": true
+		},
+		"apiDiagnostics": true,
+		"contentCreation": {
+			"rules": [
+				{
+					"behavior": "window",
+					"match": [
+						"<all_urls>"
+					]
+				}
+			]
+		},
+		"permissions": {
+			"Application": {
+				"setFileDownloadLocation": true
+			},
+			"ExternalWindow": {
+				"wrap": true
+			},
+			"System": {
+				"downloadAsset": true,
+				"launchExternalProcess": true,
+				"getAllExternalWindows": true,
+				"enableNativeWindowIntegrationProvider": true,
+				"openUrlWithBrowser": {
+					"enabled":true,
+					"protocols":["msteams", "slack","symphony"]
+				},
+                "readRegistryValue": {
+                  "enabled":true,
+                  "registryKeys":[  
+                     "HKEY_CURRENT_USER\\Software\\OpenFin\\RVM",
+                     "HKEY_CURRENT_USER\\Software\\OpenFin\\Runtime",
+                     "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System"
+                  ]
+                }
+			},
+			"webAPIs": [
+                    "audio",
+                    "video",
+                    "notifications",
+					"clipboard-read",
+					"clipboard-sanitized-write"
+            ]
+		},
+		"defaultDomainSettings": {
+			"rules": [
+				{
+					"match": [
+						"*://file-examples-com.github.io/*",
+						"*://sample-videos.com/*"
+					],
+					"options": {
+						"downloadSettings": {
+							"rules": [
+								{
+									"match": [
+										"*://*/*.xls", "*://*/*.csv", "*://*/*.ppt"
+									],
+									"behavior": "no-prompt"
+								},
+								{
+									"match": [
+										"<all_urls>"
+									],
+									"behavior": "prompt"								
+								}
+							]
+						}
+					}
+				},
+				{
+					"match": [
+						"*://www.lancsngfl.ac.uk/*"
+					],
+					"options": {
+						"downloadSettings": {
+							"rules": [
+								{
+									"match": [
+										"*://*/*.exe"
+									],
+									"behavior": "no-prompt"
+								}
+							]
+						}
+					}
+				},
+				{
+					"match": [
+						"<all_urls>"
+					],
+					"behavior": "prompt"
+				}
+			]
+		}
+    },
+	"splashScreenImage" : "http://localhost:5555/splash.png",
+    "runtime": {
+        "arguments": "--inspect=9222 --remote-debugging-port=0 --v=1 --disable-permissions-check-from-rvm --relax-api-security --diagnostics --log-net-log=C:/tmp/test.json",
+		"version0": "16.83.53.27",
+		"version1": "20.91.63.5",
+		"version2": "21.90.59.15",
+		"version3": "15.80.50.34",
+		"version4": "canary",
+		"version": "canary"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "icon": "http://localhost:5555/favicon.ico",
+        "name": "Openfin POC"
+    },
+    "supportInformation": {
+        "company": "Company Name",
+        "product": "Product Name",
+        "email": "support@company.com",
+		"enableErrorReporting": true,
+		"forwardErrorReports": true
+    }
+}

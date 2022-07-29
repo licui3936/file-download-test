@@ -1,0 +1,51 @@
+{  
+    "applicationSettings": {
+      "MyPolicies": {
+        "urls": ["http://localhost:5555/app.json", "file:///Z:/dev/app-template-2/public/app.json"],
+        "permissions": {
+			"Application": {
+				"setFileDownloadLocation": true
+			},
+            "ExternalWindow": {
+                "wrap": true
+            },
+            "System": {
+                "downloadAsset": true,
+                "getAllExternalWindows": true,
+                "launchExternalProcess": true,
+				"launchFile": true,
+                "readRegistryValue": true,
+                "terminateExternalProcess": true,
+				"openUrlWithBrowser": {
+					"enabled":true,
+					"protocols":["msteams", "slack"]
+				}
+            },
+		    "webAPIs": ["audio","video","notifications"]
+        }
+      },
+      "default": {
+        "permissions": {
+            "ExternalWindow": {
+                "wrap": true
+            },
+            "System": {
+                "downloadAsset": true,
+                "getAllExternalWindows": true,
+                "launchExternalProcess": true,
+				"launchFile": true,
+                "readRegistryValue":{
+                  "enabled":true,
+                  "registryKeys":[  
+                     "HKEY_CURRENT_USER\\Software\\OpenFin\\RVM",
+                     "HKEY_CURRENT_USER\\Software\\OpenFin\\Runtime",
+                     "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System"
+                  ]
+                },
+                "terminateExternalProcess": true
+            },
+		    "webAPIs": ["audio", "video","notifications"]
+        }
+      }
+    }
+  }

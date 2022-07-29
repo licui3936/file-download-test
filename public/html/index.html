@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>OpenFin Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+
+    function saveImageAs (imgOrURL) {
+       if (typeof imgOrURL == 'object')
+         imgOrURL = imgOrURL.src;
+       window.win = open (imgOrURL);
+       setTimeout('win.document.execCommand("SaveAs")', 500);
+     }
+   </script>  
+</head>
+<!--body style="background-color:rgb(200,200,200)"-->
+<body>
+  <div>
+    <h1>Hello, world!</h1>
+    <p>This is a template for an OpenFin application.</p>
+    <p id="version-number-container">
+      Current version: <span id="of-version"></span>
+    </p>
+    <!--A HREF="javascript: void 0"
+    ONCLICK="saveImageAs(document.anImage); return false">save image</A>
+ <IMG NAME="anImage" SRC="./save.jpg"-->
+<a href="javascript:window.open('http://localhost:5555/index.html', 'testWin')">Click here to open a window</a>
+ 
+ <br />
+ <br />
+<a href="http://www.pdf995.com/samples/pdf.pdf" download>download pdf file</a>
+<br/>
+<br/>
+<a href="https://sample-videos.com/zip/10mb.zip">download zip file</a>
+<a href="https://amazon.com" target="_blank">amazon</a>
+<p>IFrame Test</p>
+<iframe id='test' width="100%"></iframe>
+  </div>  
+  <script src="../js/main.js"></script>
+</body>
+</html>

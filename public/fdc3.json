@@ -1,0 +1,92 @@
+{ 
+    "runtime": {
+		"version": "canary",
+		"arguments": "--inspect --v=1"
+	},
+	"platform": {
+		"uuid": "fdc3-platform",
+		"autoShow": true,
+		"apiDiagnostics": false,
+		"defaultWindowOptions": {
+			"fdc3InteropApi": "1.2"
+		},
+		"defaultViewOptions": {
+			"experimental": {
+				"childWindows": true
+			},
+			"fdc3InteropApi": "1.2"
+		},
+		"interopBrokerConfiguration": {
+			"contextGroups": [
+				{
+					"id": "green",
+					"displayMetadata": {
+						"color": "#00CC88",
+						"name": "green"
+					}
+				},
+				{
+					"id": "purple",
+					"displayMetadata": {
+						"color": "#8C61FF",
+						"name": "purple"
+					}
+				},
+				{
+					"id": "orange",
+					"displayMetadata": {
+						"color": "#FF8C4C",
+						"name": "orange"
+					}
+				},
+				{
+					"id": "red",
+					"displayMetadata": {
+						"color": "#FF5E60",
+						"name": "red"
+					}
+				},
+				{
+					"id": "pink",
+					"displayMetadata": {
+						"color": "#FF8FB8",
+						"name": "pink"
+					}
+				},
+				{
+					"id": "yellow",
+					"displayMetadata": {
+						"color": "#E9FF8F",
+						"name": "yellow"
+					}
+				}
+			]
+		}
+	},
+	"snapshot": {
+		"windows": [
+			{
+				"name": "window_A",
+				"layout": {
+					"content": [
+						{
+							"type": "stack",
+							"id": "no-drop-target",
+							"content": [
+								{
+									"type": "component",
+									"componentName": "view",
+									"componentState": {
+										"name": "component_A1",
+										"url": "http://google.com"
+									}
+								}
+
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

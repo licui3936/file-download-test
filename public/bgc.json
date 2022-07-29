@@ -1,0 +1,51 @@
+{
+    "licenseKey": "ab32f91d-71e4-4ae0-9c04-3d4345ed07ad",
+    "runtime": {
+        "arguments": "--remote-debugging-port=9090 --security-realm=fenics-uat",
+        "version": "9.61.33.32"
+    },
+    "shortcut": {
+        "company": "Fenics",
+        "description": "Fenics",
+        "icon": "https://fenics-desktop.uat.fenicsone.com/fenicsone.ico",
+        "name": "Fenics UAT"
+    },
+    "splashScreenImage": "https://fenics-desktop.uat.fenicsone.com/fenics-one-splash.png",
+    "startup_app": {
+        "alwaysOnTop": false,
+        "applicationIcon": "https://fenics-desktop.uat.fenicsone.com/fenicsone.ico",
+        "autoShow": false,
+        "contextMenu": true,
+        "cornerRounding": {
+            "height": 0,
+            "width": 0
+        },
+        "defaultHeight": 0,
+        "defaultLeft": 0,
+        "defaultTop": 0,
+        "defaultWidth": 0,
+        "description": "Fenics",
+        "frame": false,
+        "icon": "https://fenics-desktop.uat.fenicsone.com/fenicsone.ico",
+        "maxHeight": 0,
+        "maxWidth": 0,
+        "maximizable": false,
+        "minHeight": 0,
+        "minWidth": 0,
+        "name": "Fenics",
+        "resizable": true,
+        "resizeRegion": {
+            "bottomRightCorner": 9,
+            "sides": {
+                "bottom": true,
+                "left": true,
+                "right": true,
+                "top": true
+            },
+            "size": 7
+        },
+        "shadow": true,
+        "url": "https://fenics-applications.uat.fenicsone.com/fenics/fenics-shell-app/v8.5.0/index.html",
+        "uuid": "fenics/fenics-shell-app-uat"
+    }
+}

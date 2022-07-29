@@ -1,0 +1,60 @@
+{
+   "licenseKey":"64605fac-add3-48a0-8710-64b38e96a2d",
+    "startup_app": {
+        "name": "OpenfinPOCName",
+        "url": "https://html5test.com/",
+        "uuid": "OpenfinPOC",
+        "autoShow": true,
+        "saveWindowState": false,
+        "backgroundColor": "#aabbcc",
+		"waitForPageLoad": false,
+        "alphaMask": {
+            "red": 200,
+            "green": 200,
+            "blue": 200
+        },
+        "accelerator": {
+            "zoom": true
+        },
+        "cornerRounding": {
+            "width": 20,
+            "height": 20
+        },
+        "defaultWidth": 1000,
+        "defaultHeight": 500,
+		"aspectRatio": 1.0,
+        "plugins": false,
+        "frame": true,
+        "nonPersistent": false,
+        "resizable": true,
+        "experimental": {
+            "v2Api": true
+        },	
+        "enableAppLogging": true,
+		"logManagement": {
+            "enabled": true,
+            "encryptionKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvSiqLJ+Qle6sN0atKrYjOaSnGMGIJiaKLUe+6crallFYlFAXxzr2TLP/uqkbTefBnabtHGQk4dt9rTKItm9XnUlR71J7yO49HqtnGTxR88rgQF/FpIJLo2WjqrQYO2vrl/APNOqeAUzDfqZOMggmsOPMkojfNy8uFg630rPKiCPjNwvZ9ZXalfx0vYMT/yqvxJufr0znUmsvZOvhAPztoq06vG2wCbSYSTXlNkILZOJJr+l1MqQn3IfdfbDR+Vq1Sh44743oCU/dCngsOqLERFW305ban9nbOBvAQ+8BT2YuFAsWkZAYsVJcIA0z9/+SGPIJDCYF0JzwUTIK8UxffQIDAQAB",
+            "url": "https://log-manager-staging.openfin.co"
+        }
+    },
+    "runtime": {
+        "arguments": "--inspect=9222 --v=1",
+        "version0": "12.69.43.22",
+        "version1": "11.69.42.29",
+		"version2": "10.66.39.43",
+        "version3": "14.78.45.31",
+		"version": "13.76.43.30",
+		"version": "stable"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "name": "Openfin POC"
+    },
+    "supportInformation": {
+        "company": "Company Name",
+        "product": "Product Name",
+        "email": "support@company.com",
+        "forwardErrorReports": true
+    }
+}

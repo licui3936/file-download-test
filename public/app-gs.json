@@ -1,0 +1,67 @@
+{ 
+	"devtools_port": 9093,
+    "dialogSettings": {
+        "bgColor": 4294967295,
+        "logo": "https://marquee.gs.com/desktop-resources/logo-100x25.png",
+        "progressBarBgColor": 4292467161,
+        "progressBarBorderColor": 16777215,
+        "progressBarFillColor": 4279201262,
+        "textColor": 4279900698
+    },
+    "licenseKey": "0d6a9fcb-4443-484e-9034-5177bbb5051d",
+    "runtime": {
+        "arguments": "--disable-background-timer-throttling --disable-breakpad --disable-bundled-ppapi-flash --disable-in-process-stack-traces --enable-aggressive-domstorage-flushing --enable-strict-mixed-content-checking --security-realm=Marquee --ssl-version-min=tls1.1 --v=1",
+        "fallbackVersion": "9.61.38.41",
+        "forceLatest": false,
+        "version1": "10.66.39.43",
+		"version": "13.76.44.17"
+    },
+    "shortcut": {
+        "company": "Goldman Sachs",
+        "description": "Marquee Desktop",
+        "icon": "http://marquee.gs.com/desktop-resources/favicon-dark-bg-256x256-v1.ico",
+        "name": "Marquee Desktop",
+        "target": [
+            "desktop",
+            "start-menu",
+            "automatic-start-up"
+        ]
+    },
+    "splashScreenImage": "https://marquee.gs.com/desktop-resources/splash.png",
+    "startup_app": {
+        "alwaysOnTop": true,
+        "autoShow": true,
+        "contentNavigation": {
+            "whitelist": [
+                "https://*.gs.com/*",
+				"http://localhost:5555/*"
+            ]
+        },
+        "contextMenu": false,
+        "cornerRounding": {
+            "height": 4,
+            "width": 4
+        },
+        "defaultCentered": true,
+        "defaultHeight": 564,
+        "defaultWidth": 450,
+        "description": "",
+        "enableAppLogging": false,
+        "frame": false,
+        "minimumRVMVersion": "4.8.1.1",
+        "name": "Marquee Desktop Login",
+        "resizable": false,
+        "saveWindowState": false,
+        "spellCheck": true,
+        "taskbarIcon": "https://marquee.gs.com/desktop-resources/favicon-dark-bg-256x256-v1.png",
+        "url": "http://localhost:5555/index.html",
+        "uuid": "marquee-desktop-login-prod-1"
+    },
+    "supportInformation": {
+        "company": "Goldman Sachs",
+        "email": "gs-marquee-ui-platform@gs.com",
+        "enableErrorReporting": true,
+        "forwardErrorReports": true,
+        "product": "Marquee Desktop"
+    }
+}

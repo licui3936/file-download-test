@@ -1,0 +1,59 @@
+{
+   "licenseKey":"64605fac-add3-48a0-8710-64b38e96a2dd",
+    "startup_app": {
+        "name": "OpenfinPOCName",
+        "url": "http://localhost:5555/index.html",
+        "uuid": "fenics/fenics-shell-app-uat",
+        "autoShow": false,
+        "defaultWidth": 0,
+        "maxWidth": 0,
+        "minWidth": 0,
+        "maxHeight": 0,
+        "defaultHeight": 0,
+        "minHeight": 0,
+        "defaultTop": 0,
+        "defaultLeft": 0,
+        "resizable": true,
+        "maximizable": false,
+        "contextMenu": true,
+        "frame": false,
+        "icon": "https://fenics-desktop.uat.fenicsone.com/fenicsone.ico",
+        "applicationIcon": "https://fenics-desktop.uat.fenicsone.com/fenicsone.ico",
+        "alwaysOnTop": false,
+        "cornerRounding": {
+            "width": 0,
+            "height": 0
+        },
+        "resizeRegion": {
+            "bottomRightCorner": 9,
+            "size": 7,
+            "sides": {
+                "top": true,
+                "right": true,
+                "bottom": true,
+                "left": true
+            }
+        },
+        "shadow": true
+    },
+    "runtime": {
+        "arguments": "--inspect=9222 --v=1",
+        "version": "9.61.37.20",
+        "version2": "9.61.36.36",
+		"version3": "stable",
+        "version1": "alpha"
+    },
+    "splashScreenImage": "http://localhost:5555/splash_hello.png",
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "icon": "http://localhost:5555/favicon.ico",
+        "name": "Openfin POC"
+    },
+    "supportInformation": {
+        "company": "Company Name",
+        "product": "Product Name",
+        "email": "support@company.com",
+        "forwardErrorReports": true
+    }
+}

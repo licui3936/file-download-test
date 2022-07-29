@@ -1,0 +1,24 @@
+{
+    "startup_app": {
+        "name": "OpenfinPOC",
+        "url": "http://localhost:5555/test.html",
+        "uuid": "OpenfinPOC2",
+        "applicationIcon": "http://localhost:5555/favicon.ico",
+        "autoShow": true,
+        "saveWindowState": true,
+		"experimental": {
+			"childWindows": true
+		}
+    },
+    "runtime": {
+        "arguments": "--inspect=9222 --v=1",
+		"version": "canary",
+        "version1": "16.83.53.26"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "icon": "http://localhost:5555/favicon.ico",
+        "name": "Openfin POC"
+    }
+}
