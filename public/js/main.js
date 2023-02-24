@@ -77,7 +77,7 @@ async function onMain(args) {
     console.log('file download complete');
     const fileExtension = event.fileName.split('.').pop();
     if (fileExtension === 'exe') {
-      fin.System.launchFile({fileUuid: event.fileUuid});
+      fin.System.launchExternalProcess({fileUuid: event.fileUuid});
     }
   }, function () {
       console.log("The registration was successful");

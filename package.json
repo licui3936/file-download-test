@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/openfin": "^43.0.1",
-    "hadouken-js-adapter": "latest",
     "live-server": "^1.2.0",
-    "openfin-launcher": "^1.4.4"
+    "openfin-adapter": "^29.73.14"
   },
   "license": "Apache-2.0",
   "dependencies": {
-	"gulp": "^4.0.2",
+    "gulp": "^4.0.2",
     "modify-filename": "^1.1.0"
   }
 }
