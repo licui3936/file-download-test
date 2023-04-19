@@ -65,8 +65,6 @@ async function onMain(args) {
 
   console.log(args);
 	console.log('on main called');
-  //const app = fin.desktop.Application.getCurrent();
-  //const win = fin.desktop.Window.getCurrent();
 
   const app = fin.Application.getCurrentSync();
   const win = fin.Window.getCurrentSync();
@@ -74,7 +72,7 @@ async function onMain(args) {
 
   // listen on file download event
   win.on("file-download-completed", function (event) {
-    console.log('file download complete');
+    console.log('file download completed', event);
     const fileExtension = event.fileName.split('.').pop();
     if (fileExtension === 'exe') {
       fin.System.launchExternalProcess({fileUuid: event.fileUuid});
@@ -175,3 +173,4 @@ function writeMe(){
 		});
 	}
 }
+
